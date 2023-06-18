@@ -1,0 +1,36 @@
+name: zKitPvP
+version: '${project.version}'
+main: it.danilotallaric.zkitpvp.KitPvP
+authors: [ danilotallaric2 ]
+description: KitPvP plugin for Spigot/Paper servers
+softdepend: [ PlaceholderAPI ]
+commands:
+  kitpvp:
+    description: Main command for everything
+    aliases: [ kp, zkitpvp ]
+  spawn:
+    description: Teleport player to spawn
+  dropsettings:
+    description: Command to manage the pickup settings
+    aliases: [ drops, drop-settings ]
+  fix:
+    description: Fixes inventory
+    aliases: [ fixall ]
+  giveexp:
+    description: Transfer a speciefied amount of levels to another player
+    aliases: [ givelevels, expgive, paylevels, payexp ]
+  discord:
+    description: Discord command
+    aliases: [ ds ]
+  build:
+    description: Build command
+  assegno:
+    description: assegno command
+    aliases: [ assegni ]
+  potion:
+    description: Pot command
+    aliases: [ pot ]
+  zinvsee:
+    description: Invsee command
+  store:
+    description: Store command
