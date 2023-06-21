@@ -59,6 +59,7 @@ assegno:
 
 sugar:
   used: "&bHai utilizzato lo zucchero e ora per 10 secondi avrai &aSPEED 3&b."
+  cooldown: "&cPotrai riusare lo zucchero tra pochi secondi."
 
 potion:
   sent: "&7Pozioni stackate con successo.."

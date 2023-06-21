@@ -6,6 +6,7 @@ combat:
   # The amount of time to wait before being able to execute the commands again and leave the server
   timer: 15.0
 
+
   # All the commands allowed in combat
   allowed-commands:
     - /r
@@ -19,6 +20,10 @@ combat:
 fix:
   # Set to 0 to remove the price
   cost: 2000
+
+sugar:
+  duration: 20
+  timer: 20
 
 drop-settings:
   # List of rows for the

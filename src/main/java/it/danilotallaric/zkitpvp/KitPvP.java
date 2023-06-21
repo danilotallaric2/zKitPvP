@@ -104,7 +104,7 @@ public final class KitPvP extends JavaPlugin implements Listener {
             String display = itemstack.getItemMeta().getDisplayName();
             List<String> lore = itemstack.getItemMeta().getLore();
 
-            if (display.equals(KitPvP.getMessage("assegno.name"))) {
+            if (display.equals(getMessage("assegno.name"))) {
                 for (String money : lore) {
                     Matcher matcher = MONEY_PATTERN.matcher(money);
 
@@ -134,7 +134,7 @@ public final class KitPvP extends JavaPlugin implements Listener {
             String display = itemstack.getItemMeta().getDisplayName();
             List<String> lore = itemstack.getItemMeta().getLore();
 
-            return display.equals(KitPvP.getMessage("assegno.name")) && lore.size() == KitPvP.getFileManager().getConfig().getStringList("assegno.lore").size();
+            return display.equals(getMessage("assegno.name")) && lore.size() == KitPvP.getFileManager().getConfig().getStringList("assegno.lore").size();
         }
         return false;
     }

@@ -3,6 +3,7 @@ package it.danilotallaric.zkitpvp.listeners;
 
 import it.danilotallaric.zkitpvp.KitPvP;
 import it.danilotallaric.zkitpvp.utils.ChatUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -15,17 +16,33 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.bukkit.scheduler.BukkitScheduler;
 
-public class CustomListener
-        implements Listener {
+import java.sql.Time;
+import java.util.*;
+
+public class CustomListener implements Listener {
+    private final Set<UUID> sugarCooldown = new HashSet<>();
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         double balance = KitPvP.getEconomy().getBalance(event.getPlayer());
         Player player = event.getPlayer();
         ItemStack item = event.getItem();
         if (event.getItem() == null || event.getItem().getType() != Material.SUGAR) return;
-        player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 200, 2));
+
+
+        if (sugarCooldown.contains(player.getUniqueId())) {
+            player.sendMessage(ChatUtils.getFormattedText("sugar.cooldown"));
+            event.setCancelled(true);
+            return;
+        }
+
+
+        sugarCooldown.add(player.getUniqueId());
+        Bukkit.getScheduler().runTaskLater(KitPvP.getInstance(), () -> sugarCooldown.remove(player.getUniqueId()), KitPvP.getFileManager().getConfig().getInt("sugar.timer") * 10L);
+
         this.removeSugarFromInventory(player);
+        player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, KitPvP.getFileManager().getConfig().getInt("sugar.duration") * 10, 2));
         player.sendMessage(ChatUtils.getFormattedText("sugar.used"));
 
 
