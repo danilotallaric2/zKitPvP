@@ -80,7 +80,8 @@ store:
 
 discord:
   message: "&bEntra nel nostro server Discord ufficiale &e&ndiscord.servername.it&7."
-
+vote:
+  message: "&bVota il server su &e&nvota.tuoserver.it&7"
 admin:
   no-sub-command-found: "&cNon è stato trovato alcun sotto comando con questo nome."
   malformed-command: "&cUso del comando non corretto, per maggiori informazioni esegui /kitpvp."

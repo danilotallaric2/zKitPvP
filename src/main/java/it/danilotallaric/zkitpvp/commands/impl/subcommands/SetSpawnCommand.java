@@ -14,7 +14,7 @@ import java.util.List;
 public class SetSpawnCommand extends Subcommand {
 
     public SetSpawnCommand() {
-        super("kitpvp", "setspawn", "kitpvp.commands.setspawn", true);
+        super("kitpvp", "setspawn", "zkitpvp.commands.setspawn", true);
     }
 
     @Override

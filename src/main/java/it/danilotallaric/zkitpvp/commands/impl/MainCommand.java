@@ -13,7 +13,7 @@ import java.util.List;
 public class MainCommand extends KitPvPCommand {
 
     public MainCommand() {
-        super(KitPvP.getInstance(), "kitpvp", "kitpvp.commands.admin", false);
+        super(KitPvP.getInstance(), "kitpvp", "zkitpvp.commands.admin", false);
 
         setNoSubCommandFoundMessage(ChatUtils.getFormattedText("admin.no-sub-command-found"));
         setNoPermissionMessage(ChatUtils.getColoredText("&7Running &bzKitPvP &7version &a2.0.0 &7by &cdanilotallaric#9017"));

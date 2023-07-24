@@ -14,7 +14,7 @@ import java.util.List;
 public class SetBountyCommand extends Subcommand {
 
     public SetBountyCommand() {
-        super("kitpvp", "setbounty", "kitpvp.commands.setbounty", false);
+        super("kitpvp", "setbounty", "zkitpvp.commands.setbounty", false);
     }
 
     @Override

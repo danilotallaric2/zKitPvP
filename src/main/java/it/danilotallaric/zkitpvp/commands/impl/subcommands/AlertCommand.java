@@ -10,7 +10,7 @@ import java.util.List;
 public class AlertCommand extends Subcommand {
 
     public AlertCommand() {
-        super("kitpvp", "alert", "kitpvp.commands.alert", false);
+        super("kitpvp", "alert", "zkitpvp.commands.alert", false);
     }
 
     @Override

@@ -24,6 +24,7 @@ import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
+import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.EnchantingInventory;
@@ -31,8 +32,10 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.material.Dye;
+import org.bukkit.potion.PotionData;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.bukkit.potion.PotionType;
 import org.bukkit.util.Vector;
 
 import java.util.*;
@@ -538,4 +541,21 @@ public class PlayerListener implements Listener {
 
         return lapis;
     }
+
+    @EventHandler
+    public void onInventoryClick2(InventoryClickEvent event) {
+        ItemStack clickedItem = event.getCurrentItem();
+        if (clickedItem == null || !clickedItem.getType().equals(Material.POTION)) {
+            return;
+        }
+
+        int maxStackSize = 64;
+
+        event.setCurrentItem(null);
+
+        int amount = Math.min(clickedItem.getAmount(), maxStackSize);
+
+        ItemStack newItem = new ItemStack(clickedItem.getType(), amount, clickedItem.getDurability());
+    }
+
 }

@@ -14,7 +14,7 @@ import java.util.List;
 public class SetStatsCommand extends Subcommand {
 
     public SetStatsCommand() {
-        super("kitpvp", "setstats", "kitpvp.commands.setstats", false);
+        super("kitpvp", "setstats", "zkitpvp.commands.setstats", false);
     }
 
     @Override

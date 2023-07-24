@@ -19,7 +19,7 @@ public class DropSettingsCommand extends KitPvPCommand {
     private final List<String> lines = KitPvP.getFileManager().getConfig().getStringList("drop-settings.lore");
 
     public DropSettingsCommand() {
-        super(KitPvP.getInstance(), "dropsettings", "kitpvp.commands.dropsettings", true);
+        super(KitPvP.getInstance(), "dropsettings", "zkitpvp.commands.dropsettings", true);
     }
 
     @Override

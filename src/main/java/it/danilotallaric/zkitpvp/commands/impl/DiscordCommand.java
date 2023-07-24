@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 public class DiscordCommand
         extends KitPvPCommand {
     public DiscordCommand() {
-        super(KitPvP.getInstance(), "discord", "kitpvp.commands.discord", false);
+        super(KitPvP.getInstance(), "discord", "zkitpvp.commands.discord", false);
     }
 
     public boolean execute(CommandSender sender, List<String> args) {

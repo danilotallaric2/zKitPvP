@@ -27,7 +27,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 public class AnvilCommand
         extends KitPvPCommand {
     public AnvilCommand() {
-        super(KitPvP.getInstance(), "anvil", "kitpvp.commands.discord", false);
+        super(KitPvP.getInstance(), "anvil", "zkitpvp.commands.discord", false);
     }
 
     public boolean execute(CommandSender sender, List<String> args) {

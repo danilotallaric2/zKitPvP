@@ -10,7 +10,7 @@ import java.util.List;
 public class ReloadCommand extends Subcommand {
 
     public ReloadCommand() {
-        super("kitpvp", "reload", "kitpvp.commands.reload", false);
+        super("kitpvp", "reload", "zkitpvp.commands.reload", false);
     }
 
     @Override

@@ -12,7 +12,7 @@ import java.util.List;
 public class BuildCommand extends Subcommand {
 
     public BuildCommand() {
-        super("kitpvp", "build", "kitpvp.commands.build", true);
+        super("kitpvp", "build", "zkitpvp.commands.build", true);
     }
 
     @Override

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class InvseeCommand extends KitPvPCommand {
     public InvseeCommand() {
-        super(KitPvP.getInstance(), "zinvsee", "kitpvp.commands.zinvsee", true);
+        super(KitPvP.getInstance(), "zinvsee", "zkitpvp.commands.zinvsee", true);
     }
 
     public boolean execute(CommandSender sender, List<String> args) {

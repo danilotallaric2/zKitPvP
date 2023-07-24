@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 public class BuildCommand2
         extends KitPvPCommand {
     public BuildCommand2() {
-        super(KitPvP.getInstance(), "build", "kitpvp.commands.build", true);
+        super(KitPvP.getInstance(), "build", "zkitpvp.commands.build", true);
     }
 
     @Override

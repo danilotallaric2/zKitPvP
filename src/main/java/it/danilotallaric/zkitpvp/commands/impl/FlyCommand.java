@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 public class FlyCommand
         extends KitPvPCommand {
     public FlyCommand() {
-        super(KitPvP.getInstance(), "fly", "kitpvp.commands.fly", true);
+        super(KitPvP.getInstance(), "fly", "zkitpvp.commands.fly", true);
     }
 
     public boolean execute(CommandSender sender, List<String> args) {

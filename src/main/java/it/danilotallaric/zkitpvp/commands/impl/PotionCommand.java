@@ -21,7 +21,7 @@ import org.bukkit.potion.PotionType;
 
 public class PotionCommand extends KitPvPCommand {
     public PotionCommand() {
-        super(KitPvP.getInstance(), "potion", "kitpvp.commands.potion", false);
+        super(KitPvP.getInstance(), "potion", "zkitpvp.commands.potion", false);
     }
 
     public boolean execute(CommandSender sender, List<String> args) {

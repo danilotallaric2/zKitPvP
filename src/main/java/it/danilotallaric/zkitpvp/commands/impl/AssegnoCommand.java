@@ -14,7 +14,7 @@ import java.util.List;
 
 public class AssegnoCommand extends KitPvPCommand {
     public AssegnoCommand() {
-        super(KitPvP.getInstance(), "assegno", "kitpvp.commands.assegno", false);
+        super(KitPvP.getInstance(), "assegno", "zkitpvp.commands.assegno", false);
     }
 
     public boolean execute(CommandSender sender, List<String> args) {

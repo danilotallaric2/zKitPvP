@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SpawnCommand extends KitPvPCommand {
     public SpawnCommand() {
-        super(KitPvP.getInstance(), "spawn", "kitpvp.commands.spawn", true);
+        super(KitPvP.getInstance(), "spawn", "zkitpvp.commands.spawn", true);
 
         setNoPermissionMessage(ChatUtils.getFormattedText("spawn.no-permission"));
     }

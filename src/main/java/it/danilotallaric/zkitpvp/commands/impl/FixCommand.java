@@ -14,7 +14,7 @@ import java.util.List;
 public class FixCommand extends KitPvPCommand {
 
     public FixCommand() {
-        super(KitPvP.getInstance(), "fix", "kitpvp.commands.fix", true);
+        super(KitPvP.getInstance(), "fix", "zkitpvp.commands.fix", true);
     }
 
     @Override

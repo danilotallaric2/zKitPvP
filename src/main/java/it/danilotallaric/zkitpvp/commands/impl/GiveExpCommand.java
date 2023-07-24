@@ -13,7 +13,7 @@ import java.util.List;
 public class GiveExpCommand extends KitPvPCommand {
 
     public GiveExpCommand() {
-        super(KitPvP.getInstance(), "giveexp", "kitpvp.commands.giveexp", true);
+        super(KitPvP.getInstance(), "giveexp", "zkitpvp.commands.giveexp", true);
 
         setNoPermissionMessage(ChatUtils.getFormattedText("giveexp.no-permission"));
     }

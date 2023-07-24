@@ -34,3 +34,6 @@ commands:
     description: Invsee command
   store:
     description: Store command
+  vote:
+    description: Vote command
+    aliases: [ vota ]
