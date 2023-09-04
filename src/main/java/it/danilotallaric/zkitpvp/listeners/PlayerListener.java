@@ -542,20 +542,4 @@ public class PlayerListener implements Listener {
         return lapis;
     }
 
-    @EventHandler
-    public void onInventoryClick2(InventoryClickEvent event) {
-        ItemStack clickedItem = event.getCurrentItem();
-        if (clickedItem == null || !clickedItem.getType().equals(Material.POTION)) {
-            return;
-        }
-
-        int maxStackSize = 64;
-
-        event.setCurrentItem(null);
-
-        int amount = Math.min(clickedItem.getAmount(), maxStackSize);
-
-        ItemStack newItem = new ItemStack(clickedItem.getType(), amount, clickedItem.getDurability());
-    }
-
 }
