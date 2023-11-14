@@ -43,4 +43,4 @@
 
 
 <br><br>
-<h1>Entra nel nostro Discord: <a href="https://discord.gg/KtYyz6zptE">Clicca qui</a></h1>
+<h1>Entra nel nostro Discord: <a href="https://discord.gg/keGSbMFvSY">Clicca qui</a></h1>
