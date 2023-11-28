@@ -1,9 +1,9 @@
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/1083632575156846672/1120061873077883051/zKitPVP_Logo.png" width="256">
-<h1>ZKitPVP</h1>
+<h1>zKitPVP</h1>
 </div>
 
-<p>ZKitPVP è un plugin con tante funzioni inovative per il tuo server. come è stato detto ci sono tante funzioni, tipo assegni direttamente senza l'uso di plugin esterni, taglie, fix e tanti altri. 
+<p>zKitPVP è un plugin con tante funzioni innovative per il tuo server. come è stato detto ci sono tante funzioni, tipo assegni direttamente senza l'uso di plugin esterni, taglie, fix e tanti altri. 
 </p>
 
 
@@ -39,8 +39,9 @@
 - %kitpvp_combat% - Cooldown del combattimento
 - %kitpvp_enderpearl% - Cooldown Enderpaerl
 - %kitpvp_bounty% - Taglia di un giocatore
+- %kitpvp_kd% - KD di un giocatore
 - %kitpvp_bounty_formatted% - Taglia di un giocatore ma formattata con K, M, B, ecc...
 
 
 <br><br>
-<h1>Entra nel nostro Discord: <a href="https://discord.gg/keGSbMFvSY">Clicca qui</a></h1>
+<h1>Entra nel nostro Discord: <a href="https://discord.gg/kuThqugeJH">Clicca qui</a></h1>
