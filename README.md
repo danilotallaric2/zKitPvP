@@ -11,8 +11,8 @@
 # Features
 - L'ascia infligge più danni alle armature.
 - Cooldown per l'Enderpearl e per il combattimento.
-- Statistiche.
 - Taglie.
+- Sistema di Stats (KD, Kills etc...). 
 - Punto di spawn.
 - Effetto/oggetto alla morte di un nemico.
 - Tablist
