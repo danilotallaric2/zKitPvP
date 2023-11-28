@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.UUID;
 
 public class PlayerData {
-
     private final UUID uuid;
 
     public void addBounty(long bounty) {
@@ -34,6 +33,7 @@ public class PlayerData {
 
     public long endCombatTimestamp, endEnderTimestamp;
     public List<Player> assisters = new ArrayList<>();
+    public List<Player> deathsplayers = new ArrayList<>();
     public boolean isBuilder = false, inCombat = false, inEnderCooldown = false, atSpawn = true, pickupArrows = true, pickupGoldenApple = true;
     public int kills = 0, deaths = 0, streak = 0;
 
@@ -92,5 +92,13 @@ public class PlayerData {
 
     public UUID getUUID() {
         return uuid;
+    }
+
+    public double getKD() {
+        if (deaths == 0) {
+            return kills;
+        } else {
+            return (double) kills / deaths;
+        }
     }
 }
