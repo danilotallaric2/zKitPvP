@@ -5,10 +5,15 @@ import it.danilotallaric.zkitpvp.data.PlayerData;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.OfflinePlayer;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 public class MainPlaceholder extends PlaceholderExpansion {
+
     @Override
     public String getAuthor() {
-        return "ImGqbbo";
+        return "BinaryCodee, danilotallaric2";
     }
 
     @Override
@@ -18,7 +23,7 @@ public class MainPlaceholder extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "1.0.0";
+        return "2.0.0";
     }
 
     @Override
@@ -30,6 +35,8 @@ public class MainPlaceholder extends PlaceholderExpansion {
                 return String.valueOf(data.getBounty());
             case "bounty_formatted":
                 return formatNumber(data.getBounty());
+            case "kd":
+                return String.format("%.2f", data.getKD());
             case "kills":
                 return String.valueOf(data.kills);
             case "deaths":
@@ -45,12 +52,13 @@ public class MainPlaceholder extends PlaceholderExpansion {
                 diff = endTimestamp - current;
 
                 if (diff > 0) {
-                    return String.valueOf(Math.floor(diff / 100) / 10);
-                }
-                else {
+                    double secondsRemaining = (double) diff / 1000.0;
+                    return String.format("%.1f", Math.floor(secondsRemaining * 10) / 10);
+                } else {
                     data.endCombatTimestamp = -1;
                     return "0.0";
                 }
+
             case "enderpearl":
                 if (data.endEnderTimestamp == -1) {
                     return "0.0";
@@ -60,12 +68,13 @@ public class MainPlaceholder extends PlaceholderExpansion {
                 diff = endTimestamp - current;
 
                 if (diff > 0) {
-                    return String.valueOf(Math.floor(diff / 100) / 10);
-                }
-                else {
+                    double secondsRemaining = (double) diff / 1000.0;
+                    return String.format("%.1f", Math.floor(secondsRemaining * 10) / 10);
+                } else {
                     data.endEnderTimestamp = -1;
                     return "0.0";
                 }
+
         }
 
         return null;
