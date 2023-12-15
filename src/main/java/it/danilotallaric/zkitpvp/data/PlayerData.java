@@ -1,7 +1,5 @@
 package it.danilotallaric.zkitpvp.data;
 
-import dev.demeng.sentinel.wrapper.SentinelClient;
-import dev.demeng.sentinel.wrapper.exception.*;
 import it.danilotallaric.zkitpvp.KitPvP;
 import it.danilotallaric.zkitpvp.commands.impl.AnvilCommand;
 import org.bukkit.Bukkit;

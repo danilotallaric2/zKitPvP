@@ -87,18 +87,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>dev.demeng</groupId>
-            <artifactId>sentinel-java-wrapper</artifactId>
-            <version>1.0.6</version>
-            <!-- Exclude GSON if it's already available -->
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.code.gson</groupId>
-                    <artifactId>gson</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>org.bstats</groupId>
             <artifactId>bstats-bukkit</artifactId>
             <version>3.0.2</version>
