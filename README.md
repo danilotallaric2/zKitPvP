@@ -2,7 +2,7 @@
 <img src="https://cdn.discordapp.com/attachments/1083632575156846672/1120061873077883051/zKitPVP_Logo.png" width="256">
 <h1>zKitPVP</h1>
 </div>
-
+<h2>Create by: ImGabbo</h2>
 <p>zKitPVP è un plugin con tante funzioni innovative per il tuo server. come è stato detto ci sono tante funzioni, tipo assegni direttamente senza l'uso di plugin esterni, taglie, fix e tanti altri. 
 </p>
 

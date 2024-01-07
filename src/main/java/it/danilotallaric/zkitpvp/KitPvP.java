@@ -53,7 +53,7 @@ public final class KitPvP extends JavaPlugin implements Listener {
 
     public static KitPvP instance;
     private FileConfiguration config;
-
+    //Create by: ImGabbo
     @Override
     public void onEnable() {
         instance =  this;
